@@ -1,0 +1,47 @@
+TASK1:
+- am citit instructiunea si am memorat-o in variabila de tip unsigned int "inst" ;
+- am parcurs pe biti in ordine semnificativa (stanga->dreapta) instructiunea, folosindu-ma de operatiile pe biti "<<" si "&";
+- in functie de dimensiune fiecarei informatii continute in instructiune, am extras biti corespunzatori respectivei informatiei si i-am interpretat,
+realizand ori trecerea vallorii respectivei informatii in zecimal ("n", "dim_operand"), ori extragerea unui sir de caractere pe baza cerintei problemei (operatorii);
+- am afisat corepsunzator datele cerute;
+TASK2:
+- am citit instructiunea si am memorat-o in variabila de tip unsigned int "inst" ;
+- am parcurs pe biti in ordine semnificativa (stanga->dreapta) instructiunea, folosindu-ma de operatiile pe biti "<<" si "&";
+- in functie de dimensiune fiecarei informatii continute in instructiune, am extras biti corespunzatori respectivei informatiei si i-am interpretat,
+realizand ori trecerea vallorii respectivei informatii in zecimal ("n", "dim_operand"), ori extragerea unui sir de caractere pe baza cerintei problemei si memorarea lui in "operatori";
+- cu ajutorul formulei date in cerinta problemei, am aflat numarul de numere de tip "unsigned short" ce trebuiesc citite si prelucrate pentru a afla operanzii;
+- se stie din cerinta problemei ca dimensiunea unui numar de tip "unsigned short" se divide cu dimensiunea unui operand, asadar am aflat cati operanzi sunt stocati intr-un numar de tip "unsigned short";
+- pentru fiecare numar de tip "unsigned short", am utilizat procedeul folosit si pentru extragerea informatiilor din "inst", asa am putut lua valorile operanzilor si le-am memorat in vectorul de numere "operanzi";
+daca am gasit "n+1" operanzi, opresc interpretarea;
+- folosind o structură repetitivă de tip "for", am parcurs șirul de semne, iar la fiecare pas am rezolvat operația corespunzătoare memorând rezultatul parțial în variabila "rez";
+la finalul parcurgerii, în variabila "rez" regăsim rezultatul final;
+- am afisat variabila "rez";
+TASK3:
+- am citit instructiunea si am memorat-o in variabila de tip unsigned int "inst" ;
+- am parcurs pe biti in ordine semnificativa (stanga->dreapta) instructiunea, folosindu-ma de operatiile pe biti "<<" si "&";
+- in functie de dimensiune fiecarei informatii continute in instructiune, am extras biti corespunzatori respectivei informatiei si i-am interpretat,
+realizand ori trecerea vallorii respectivei informatii in zecimal ("n", "dim_operand"), ori extragerea unui sir de caractere pe baza cerintei problemei si memorarea lui in "operatori";
+- cu ajutorul formulei date in cerinta problemei, am aflat numarul de numere de tip "unsigned short" ce trebuiesc citite si prelucrate pentru a afla operanzii;
+- am memorat intr-o variabila "pas" initializata cu "dim_operand-1" care putere a lui 2 mai trebuie folosita pentru a obtine valoarea unui opernad;
+- am parcurs fiecare numer de tip "unsigned short" pe biti in ordine semnificativa (stanga->dreapta), micsorand variabila pas odata ce utilizam cate un bit;
+daca "pas" ajunge negativ, am obtinut valoarea unui operand pe care il memorez in vectorul de numere "operanzi", apoi ii dau din nou lui "pas" valoarea "dim_operand-1";
+daca am gasit "n+1" operanzi, opresc interpretarea;
+- folosind o structură repetitivă de tip "for", am parcurs șirul de semne, iar la fiecare pas am rezolvat operația corespunzătoare memorând rezultatul parțial în variabila "rez";
+la finalul parcurgerii, în variabila "rez" regăsim rezultatul final;
+- am afisat variabila "rez";
+TASK4:
+- am citit instructiunea si am memorat-o in variabila de tip unsigned int "inst" ;
+- am parcurs pe biti in ordine semnificativa (stanga->dreapta) instructiunea, folosindu-ma de operatiile pe biti "<<" si "&";
+- in functie de dimensiune fiecarei informatii continute in instructiune, am extras biti corespunzatori respectivei informatiei si i-am interpretat,
+realizand ori trecerea vallorii respectivei informatii in zecimal ("n", "dim_operand"), ori extragerea unui sir de caractere pe baza cerintei problemei si memorarea lui in "operatori";
+- cu ajutorul formulei date in cerinta problemei, am aflat numarul de numere de tip "unsigned short" ce trebuiesc citite si prelucrate pentru a afla operanzii;
+- am memorat intr-o variabila "pas" initializata cu "dim_operand-1" care putere a lui 2 mai trebuie folosita pentru a obtine valoarea unui opernad;
+- am parcurs fiecare numer de tip "unsigned short" pe biti in ordine semnificativa (stanga->dreapta), micsorand variabila pas odata ce utilizam cate un bit;
+daca "pas" ajunge negativ, am obtinut valoarea unui operand pe care il memorez in vectorul de numere "operanzi", apoi ii dau din nou lui "pas" valoarea "dim_operand-1";
+daca am gasit "n+1" operanzi, opresc interpretarea;
+- folosind o structură repetitivă de tip "for", am parcurs șirul de semne, căutând să rezolv operațiile de tip "*" si "/";
+pentru rezolvarea unei astfel de operații, am modificat vectorul de numere, memorând rezultatul operației în locul primului număr inclus în operație și eliminând cel de-al doilea număr prin intermediul funcției "operanzi_elimpoz";
+după ce am rezolvat operația, am eliminat semnul corespunzător ei din șirul de carcatere prin intermediul funcției "operatori_elimpoz";
+- folosind o structură repetitivă de tip "for", am parcurs noul șir de semne, iar la fiecare pas am rezolvat operația corespunzătoare memorând rezultatul parțial în variabila "rez";
+la finalul parcurgerii, în variabila "rez" regăsim rezultatul final;
+- am afisat variabila "rez";
